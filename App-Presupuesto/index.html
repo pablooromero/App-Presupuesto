@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Presupuesto App</title>
+</head>
+
+<body>
+
+   <div class="budget-container">
+      <div class="app-title">
+         <a href="#"><b>Controla tus gastos</b></a>
+      </div>
+      <div class="budget-header">
+         <div class="balance">
+            <div class="title">
+               Balance
+            </div>
+            <div class="value">
+               <small>$</small>0
+            </div>
+         </div>
+         <div class="account">
+            <div class="income">
+               <div class="title">
+                  Ingresos
+               </div>
+               <div class="income-total">
+                  <small>$</small>0
+               </div>
+            </div>
+            <div class="chart"></div>
+            <div class="outcome">
+               <div class="title">
+                  Gastos
+               </div>
+               <div class="outcome-total">
+                  <small>$</small>0
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="budget-dashboard">
+         <div class="dash-title">Tablero</div>
+         <div class="toggle">
+            <div class="tab1">Gastos</div>
+            <div class="tab2">Ingresos</div>
+            <div class="tab3 active">Total</div>
+         </div>
+         <div id="income" class="hide">
+            <ul class="list"></ul>
+            <div class="input">
+               <input type="text" id="income-title-input" name="title" placeholder="Titulo">
+               <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+               <div class="add-income"><img src="icon/plus.png" alt=""></div>
+            </div>
+         </div>
+         <div id="expense" class="hide">
+            <ul class="list"></ul>
+            <div class="input">
+               <input type="text" id="expense-title-input" name="title" placeholder="Titulo">
+               <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+               <div class="add-expense"><img src="icon/plus.png" alt=""></div>
+            </div>
+         </div>
+         <div id="all">
+            <ul class="list"></ul>
+         </div>
+
+      </div>
+
+   </div>
+
+
+   <script src="js/chart.js"></script>
+   <script src="js/budget.js"></script>
+</body>
+
+</html>
