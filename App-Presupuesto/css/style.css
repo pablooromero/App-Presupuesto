@@ -223,7 +223,7 @@ input[type="number"] {
 }
 
 .budget-dashboard #all ul.list li.income {
-  color: #fff;
+  color: #000;
 }
 .budget-dashboard #all ul.list li.expense {
   color: #f0624d;
